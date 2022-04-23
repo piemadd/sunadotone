@@ -15,7 +15,7 @@ const fragment = document.createDocumentFragment();
     
     for (let i = 0; i < tipsArray.length; i++) {
         let p = document.createElement('p');
-        p.textContent = tipsArray[i];
+        p.textContent = `${i + 1}. ${tipsArray[i]}`;
         fragment.appendChild(p);
     }
 
